@@ -1,0 +1,100 @@
+Script started on Sun 27 Aug 2017 08:09:06 AM EDT
+[01;32m08:09:06 [01;32m[root@localhost][00m:[01;34m~/temp[00m$ hcitool blescan
+Unknown command - "blescan"
+[01;32m08:09:19 [01;32m[root@localhost][00m:[01;34m~/temp[00m$ hcitool blescan[Klescan
+LE Scan ...
+DB:CB:F9:AB:FD:5D (unknown)
+DB:CB:F9:AB:FD:5D UP MOVE
+DB:CB:F9:AB:FD:5D (unknown)
+DB:CB:F9:AB:FD:5D UP MOVE
+^C[01;32m08:09:24 [01;32m[root@localhost][00m:[01;34m~/temp[00m$ gatttool -t random -b DB:CB:F9:AB:FD:5D -I -i hci1
+[DB:CB:F9:AB:FD:5D][LE]> connect
+Attempting to connect to DB:CB:F9:AB:FD:5D
+[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [KConnection successful
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> characteristics 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0002, char properties: 0x0e, char value handle: 0x0003, uuid: 00002a00-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0004, char properties: 0x02, char value handle: 0x0005, uuid: 00002a01-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0006, char properties: 0x02, char value handle: 0x0007, uuid: 00002a04-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x000a, char properties: 0x18, char value handle: 0x000b, uuid: f7c9b162-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x000d, char properties: 0x10, char value handle: 0x000e, uuid: f7c9ba82-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0010, char properties: 0x10, char value handle: 0x0011, uuid: f7c9ba91-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0014, char properties: 0x02, char value handle: 0x0015, uuid: 00002a29-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0017, char properties: 0x02, char value handle: 0x0018, uuid: 00002a26-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x001a, char properties: 0x02, char value handle: 0x001b, uuid: 00002a24-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x001d, char properties: 0x02, char value handle: 0x001e, uuid: 00002a28-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0020, char properties: 0x02, char value handle: 0x0021, uuid: 00002a27-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> 
+(gatttool:2261): GLib-WARNING **: Invalid file descriptor.
+
+[K[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> read[K[K[K[Khelp
+help                                           Show this help
+exit                                           Exit interactive mode
+quit                                           Exit interactive mode
+connect         [address [address type]]       Connect to a remote device
+disconnect                                     Disconnect from a remote device
+primary         [UUID]                         Primary Service Discovery
+included        [start hnd [end hnd]]          Find Included Services
+characteristics [start hnd [end hnd [UUID]]]   Characteristics Discovery
+char-desc       [start hnd] [end hnd]          Characteristics Descriptor Discovery
+char-read-hnd   <handle>                       Characteristics Value/Descriptor Read by handle
+char-read-uuid  <UUID> [start hnd] [end hnd]   Characteristics Value/Descriptor Read by UUID
+char-write-req  <handle> <new value>           Characteristic Value Write (Write Request)
+char-write-cmd  <handle> <new value>           Characteristic Value Write (No response)
+sec-level       [low | medium | high]          Set security level. Default: low
+mtu             <value>                        Exchange MTU for GATT/ATT
+[DB:CB:F9:AB:FD:5D][LE]> cn[Konnect 
+Attempting to connect to DB:CB:F9:AB:FD:5D
+[DB:CB:F9:AB:FD:5D][LE]> char-read-uuid 00002a00-0000-1000-8000-00805f9b34fb
+[0;91mCommand Failed: [0mDisconnected
+[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [KConnection successful
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a00-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0003 	 value: 55 50 20 4d 4f 56 45 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a04-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0007 	 value: ff ff ff ff 07 00 ff ff 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid f7c9b162-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [K[0;91mError: [0mRead characteristics by UUID failed: Attribute can't be read
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> 
+(gatttool:2261): GLib-WARNING **: Invalid file descriptor.
+
+[K[DB:CB:F9:AB:FD:5D][LE]> connect
+Attempting to connect to DB:CB:F9:AB:FD:5D
+[DB:CB:F9:AB:FD:5D][LE]> [KConnection successful
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid f7c9b162-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [K[0;91mError: [0mRead characteristics by UUID failed: Attribute can't be read
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid f7c9ba82-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [K[0;91mError: [0mRead characteristics by UUID failed: Attribute can't be read
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid f7c9ba91-6658-4390-b53c-1de5e1453654
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [K[0;91mError: [0mRead characteristics by UUID failed: Attribute can't be read
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> 
+(gatttool:2261): GLib-WARNING **: Invalid file descriptor.
+
+[10P[DB:CB:F9:AB:FD:5D][LE]> char-read-uuid 00002a29-0000-1000-8000-00805f9b34fb
+[0;91mCommand Failed: [0mDisconnected
+[DB:CB:F9:AB:FD:5D][LE]> connect
+Attempting to connect to DB:CB:F9:AB:FD:5D
+[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [KConnection successful
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a29-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0015 	 value: 4a 61 77 62 6f 6e 65 00 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a26-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0018 	 value: 34 2e 30 2e 32 37 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a24-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x001b 	 value: 55 50 20 4d 6f 76 65 00 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a28-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x001e 	 value: 34 2e 30 2e 32 37 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> 
+(gatttool:2261): GLib-WARNING **: Invalid file descriptor.
+
+[10P[DB:CB:F9:AB:FD:5D][LE]> char-read-uuid 00002a27-0000-1000-8000-00805f9b34fb
+[0;91mCommand Failed: [0mDisconnected
+[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> connect
+Attempting to connect to DB:CB:F9:AB:FD:5D
+[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [K[DB:CB:F9:AB:FD:5D][LE]> [KConnection successful
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> char-read-uuid 00002a27-0000-1000-8000-00805f9b34fb
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [Khandle: 0x0021 	 value: 31 34 
+[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> [K[0;94m[DB:CB:F9:AB:FD:5D][0m[LE]> 
+
+(gatttool:2261): GLib-WARNING **: Invalid file descriptor.
+
+[01;32m08:12:57 [01;32m[root@localhost][00m:[01;34m~/temp[00m$ exit
+
+Script done on Sun 27 Aug 2017 08:12:58 AM EDT
