@@ -1,4 +1,11 @@
 
+## Scratch Notes
+Found :https://github.com/matianfu/jawbone-droid/blob/master/src/com/example/android/bluetoothlegatt/SampleGattAttributes.java
+
+
+
+
+
 
 
 ``` Local Device
@@ -154,3 +161,38 @@ Data dumping:
 |  0x0021   | 31 34                         | 14           |               |
 |  0x0016   | 19 00 00 00 01 00 00          | .......      |               |
 |  0x0019   | 19 00 00 00 01 00 00          | .......      |               |
+
+
+
+
+Found :https://github.com/matianfu/jawbone-droid/blob/master/src/com/example/android/bluetoothlegatt/SampleGattAttributes.java
+
+| UUID                                 | Description                            |
+| ------------------------------------ |:--------------------------------------:|
+| 00002a37-0000-1000-8000-00805f9b34fb | HEART_RATE_MEASUREMENT                 |
+| 00002902-0000-1000-8000-00805f9b34fb | CLIENT_CHARACTERISTIC_CONFIG           |
+| 00001800-0000-1000-8000-00805f9b34fb | Generic Access                         |
+| 00001801-0000-1000-8000-00805f9b34fb | Generic Attribute                      |
+| 0000180d-0000-1000-8000-00805f9b34fb | Heart Rate Service                     |
+| 0000180a-0000-1000-8000-00805f9b34fb | Device Information Service             |
+| 00002a00-0000-1000-8000-00805f9b34fb | Device Name                            |
+| 00002a01-0000-1000-8000-00805f9b34fb | Appearance                             |
+| 00002a02-0000-1000-8000-00805f9b34fb | Peripheral Privacy Flag                |
+| 00002a03-0000-1000-8000-00805f9b34fb | Reconnection Address                   |
+| 00002a04-0000-1000-8000-00805f9b34fb | Peripheral Pref Connection Parameters  |
+| 00002a05-0000-1000-8000-00805f9b34fb | Service Changed                        |     
+| 00002a23-0000-1000-8000-00805f9b34fb | System ID                              |
+| 00002a24-0000-1000-8000-00805f9b34fb | Model Number String                    |
+| 00002a25-0000-1000-8000-00805f9b34fb | Serial Number String                   |
+| 00002a26-0000-1000-8000-00805f9b34fb | Firmware Revision String               |
+| 00002a27-0000-1000-8000-00805f9b34fb | Hardware Revision String               |
+| 00002a28-0000-1000-8000-00805f9b34fb | Software Revision String               |
+| 00002a29-0000-1000-8000-00805f9b34fb | Manufacturer Name String               | 
+| 00002a2a-0000-1000-8000-00805f9b34fb | IEEE 11073-20601 Regulatory Cert List  |
+| 00002a50-0000-1000-8000-00805f9b34fb | PnP ID                                 |
+| 0000fff0-0000-1000-8000-00805f9b34fb | Custom Service                         |
+| 0000fff1-0000-1000-8000-00805f9b34fb | Custom Service Value 1                 |
+| 0000fff2-0000-1000-8000-00805f9b34fb | Custom Service Value 2                 |
+| 0000fff3-0000-1000-8000-00805f9b34fb | Custom Service Value 3                 |
+| 0000fff4-0000-1000-8000-00805f9b34fb | Custom Service Value 4                 |
+| 0000fff5-0000-1000-8000-00805f9b34fb | Custom Service Value 5                 |
